@@ -3,14 +3,14 @@ const btn_close = document.querySelector('#close');
 const mobile_nav = document.querySelector('.mobile-navbar');
 
 function showMenu(){
-    btn_close.style.display = 'block';
-        btn_ham.style.display = 'none';
-        mobile_nav.style.display = 'block';
+    btn_close.classList.remove("hide");
+    btn_ham.classList.add("hide");
+        mobile_nav.classList.remove('hide')
 }
 function hideMenu(){
-    mobile_nav.style.display = 'none';
-        btn_ham.style.display = 'block';
-        btn_close.style.display = 'none';
+    mobile_nav.classList.add('hide')
+    btn_close.classList.add("hide");
+    btn_ham.classList.remove("hide");
 }
 
 btn_ham.addEventListener('click', showMenu);
