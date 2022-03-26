@@ -210,7 +210,6 @@ li a {
   position: absolute;
   z-index: 1;
   left: 10%;
-  display: none;
   transition: 0.2s ease-in-out;
 }
 .mobile-navbar ul {
@@ -231,9 +230,14 @@ hr {
   position: absolute;
   top: 5%;
   right: 5%;
+  
+}
+.hide{
   display: none;
 }
-
+.show{
+  display: block;
+}
 button {
   border: 0;
   background: transparent;
